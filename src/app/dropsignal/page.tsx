@@ -1,0 +1,2 @@
+import { OrbitalShell } from "@/components/orbital-shell";
+export default function Page() { return <OrbitalShell title="DropSignal"><section className="scan-panel p-8"><p className="eyebrow">Evidence instrument</p><h2 className="font-display mt-3 text-3xl font-bold text-white">Observed proof and seller assumptions.</h2><p className="mt-3 text-slate-300">The external schema preserves evidence snapshots and owner-only RLS rules for this module.</p></section></OrbitalShell>; }

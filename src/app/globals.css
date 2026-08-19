@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root { --background: #061019; --foreground: #e8f3f7; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+.font-display { font-family: var(--font-geist-sans), Arial, sans-serif; letter-spacing: -.02em; }
+.orbital-grid { background-image: linear-gradient(rgba(99,196,218,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(99,196,218,.045) 1px, transparent 1px); background-size: 40px 40px; }
+.hero-panel, .scan-panel { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); background: linear-gradient(145deg, rgba(11,31,43,.92), rgba(5,15,24,.88)); box-shadow: inset 0 0 0 1px rgba(109,229,255,.045), 0 24px 60px rgba(0,0,0,.18); }
+.brand-beacon { border: 1px solid rgba(103,232,249,.6); border-radius: 999px; box-shadow: 0 0 0 4px rgba(34,211,238,.06), 0 0 20px rgba(34,211,238,.28); position: relative; }
+.brand-beacon::after { content: ""; position: absolute; top: 2px; right: -2px; width: 5px; height: 5px; border-radius: 999px; background: #67e8f9; box-shadow: 0 0 8px #67e8f9; }
+.eyebrow { color: rgba(165,243,252,.62); font-size: .62rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.mission-strip { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; color: rgba(165,243,252,.62); font-size: .62rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.mission-strip span { display: inline-flex; align-items: center; gap: .35rem; }
+.mission-strip span + span::before { content: "•"; margin-right: .85rem; color: rgba(103,232,249,.35); }
+.orbital-input { width: 100%; border: 1px solid rgba(255,255,255,.1); border-radius: .75rem; background: rgba(3,13,21,.78); color: #e8f3f7; padding: .78rem .9rem; outline: none; font-size: .875rem; }
+.orbital-input:focus { border-color: rgba(103,232,249,.8); box-shadow: 0 0 0 3px rgba(34,211,238,.12); }
+.command-button { box-shadow: 0 0 24px rgba(34,211,238,.2); transition: transform .16s ease, filter .16s ease; }
+.command-button:hover { filter: brightness(1.05); }.command-button:active { transform: scale(.97); }
+.vault-card { border: 1px solid rgba(255,255,255,.08); border-radius: .9rem; background: rgba(255,255,255,.025); padding: 1rem; transition: .18s ease; }.vault-card:hover { border-color: rgba(103,232,249,.36); background: rgba(34,211,238,.045); }
+.pipeline-rail { position: relative; }.pipeline-rail::before { content: ""; position: absolute; left: 4%; right: 4%; top: 1.9rem; height: 1px; background: linear-gradient(90deg, transparent, rgba(103,232,249,.45), transparent); }
+@media (max-width: 767px) { .pipeline-rail { overflow-x: auto; grid-auto-flow: column; grid-auto-columns: 13rem; grid-template-columns: none; padding-bottom: .4rem; } }

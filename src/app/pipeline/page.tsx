@@ -1,0 +1,2 @@
+import { OrbitalShell } from "@/components/orbital-shell";
+export default function Page() { return <OrbitalShell title="Product pipeline"><section className="scan-panel p-8"><p className="eyebrow">Route map</p><h2 className="font-display mt-3 text-3xl font-bold text-white">Pipeline port prepared.</h2><p className="mt-3 text-slate-300">The Supabase migration includes owner-scoped candidates and pipeline events. This page will read the authenticated user’s records after environment configuration.</p></section></OrbitalShell>; }
