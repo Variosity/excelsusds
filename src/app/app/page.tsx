@@ -1,2 +1,4 @@
 import { OrbitalShell } from "@/components/orbital-shell";
-export default function CommandPage() { return <OrbitalShell title="Evidence before action"><section className="hero-panel relative overflow-hidden p-8"><div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url(/assets/excelsus-orbital-grid.png)" }}/><div className="relative"><p className="eyebrow">Portable workspace foundation</p><h2 className="font-display mt-4 text-4xl font-bold text-white">ExcelsusDS is ready to connect to Supabase.</h2><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300">The portable migration copy preserves the command shell and adds Supabase authentication, RLS-backed workspace storage, and Vercel API routes in the next implementation phase.</p></div></section></OrbitalShell>; }
+import { WorkspaceAccessGate } from "@/components/workspace-access-gate";
+import { WorkspaceClient } from "@/components/workspace-client";
+export default function CommandPage() { return <OrbitalShell title="Evidence before action"><WorkspaceAccessGate><WorkspaceClient mode="command"/></WorkspaceAccessGate></OrbitalShell>; }
